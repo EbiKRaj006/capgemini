@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <h3>Vaccination  Centre</h3>
+</div>
+<div style="text-align: left;padding-top: 1rem;padding-bottom: 1rem;">
+    <button (click)="create()">Add Centre</button>
+</div>
+<div>
+
+<table>
+    <tr style="color: rgb(133, 141, 138);background-color: burlywood;align-content: space-between;">
+      <th>Id</th>
+      <th>centerName</th>
+      <th>address</th>
+      <th>city</th>
+      <th>state</th>
+      <th>pincode</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let item of centreList;let i=index;">
+      <td>{{i+1}}</td>
+      <td>{{item?.centreName}}</td>
+      <td>{{item?.address}}</td>
+      <td>{{item?.city}}</td>
+      <td>{{item?.state}}</td>
+      <td>{{item?.pincode}}</td>
+      <td> <button (click)="edit(item?.centreId)">edit</button>
+      <td> <button (click)="deleteItem(item?.centreId)">delete</button></td>
+    </tr>
+  </table>
+</div>
+

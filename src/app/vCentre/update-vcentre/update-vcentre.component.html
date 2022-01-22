@@ -1,0 +1,27 @@
+<div style="text-align: center;">
+    <h3>Edit Page</h3>
+</div>
+<div style="text-align: right;">
+    <button (click)="backBtn()">back to home</button>
+</div>
+<div style="display: grid; text-align: center;">
+  
+   <input [(ngModel)]="centreName" placeholder="centreName">
+
+  
+   <input [(ngModel)]="address" placeholder="address">
+
+
+   <input [(ngModel)]="city" placeholder="city">
+
+   <input [(ngModel)]="state" placeholder="state">
+
+
+   <input [(ngModel)]="pincode" placeholder="pincode" (focusout)="checkPincode($event)">
+
+</div>
+
+<div style="text-align: center;padding-top: 1rem;padding-bottom: 1rem;">
+    <button (click)="updateCentre()">update</button>
+
+</div>

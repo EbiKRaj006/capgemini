@@ -1,0 +1,26 @@
+<div style="text-align: center;">
+    <h3>Create Centre</h3>
+</div>
+<div style="text-align: right;">
+    <button (click)="backBtn()">back to home</button>
+</div>
+<div style="display: grid; text-align: center;">
+  
+   <input [(ngModel)]="centreName" placeholder="centreName" type="text">
+
+  
+   <input [(ngModel)]="address" placeholder="address">
+
+
+   <input [(ngModel)]="city" placeholder="city" type="text">
+
+   <input [(ngModel)]="state" placeholder="state" type="text">
+
+
+   <input [(ngModel)]="pincode" placeholder="pincode" type="number" min="5" max="7">
+
+</div>
+
+<div style="text-align: center;padding-top: 1rem;padding-bottom: 1rem;">
+    <button (click)="createCentre()">Create</button>
+</div>
